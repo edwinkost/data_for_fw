@@ -48,8 +48,8 @@ for file_name in pcrglobwb_output_files:
     if os.path.exists(output_directory) == False: os.makedirs(output_directory)
 
     # climatology output netcdf file name 
-    climatology_nc_file = output_directory "/" + file_name.split(".")[0] + "_climatology_" + \
-                                                 str(sta_year) + "_to_" + str(end_year) + ".nc"
+    climatology_nc_file = output_directory + "/" + file_name.split(".")[0] + "_climatology_" + \
+                                                   str(sta_year) + "_to_" + str(end_year) + ".nc"
     
     # using cdo to calculate climatology over a certain period
     # - an example: cdo -L -f nc4 -z zip -ymonavg -selyear,1990/2010 discharge_monthAvg_output.nc discharge_monthAvg_climatology_1990_to_2010.nc
