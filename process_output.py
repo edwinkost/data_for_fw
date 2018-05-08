@@ -7,8 +7,8 @@ import sys
 import pcraster as pcr
 
 # period selected
-sta_year = 1990
-end_year = 1999
+sta_year = 2000
+end_year = 2010
 
 # main output folder
 main_output_folder = "/scratch-shared/edwinsut/data_for_flore/M02/" + str(sta_year) + "_to_" + str(end_year) + "/"
