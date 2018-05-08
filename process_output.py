@@ -76,7 +76,8 @@ for file_name in pcrglobwb_output_files:
         os.system(cmd)
         
         # convert nc file to a pcraster map
-        cmd = 'gdal_translate -of PCRaster ' + monthly_nc_file + monthly_nc_file.split(".")[0] + ".map"
+        cmd = 'gdal_translate -of PCRaster ' + monthly_nc_file + " " +\
+                                               monthly_nc_file.split(".")[0] + ".map"
         print(cmd)
         os.system(cmd)
 
