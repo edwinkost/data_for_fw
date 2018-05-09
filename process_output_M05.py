@@ -7,7 +7,7 @@ import sys
 import pcraster as pcr
 
 # period selected
-sta_year = 2000
+sta_year = 1990
 end_year = 2010
 
 # main output folder
