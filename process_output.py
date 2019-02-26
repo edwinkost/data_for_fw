@@ -10,13 +10,15 @@ import pcraster as pcr
 sta_year = 2000
 end_year = 2010
 
+clone_area = "M08"
+
 # main output folder
-main_output_folder = "/scratch-shared/edwinsut/data_for_flore/M02/" + str(sta_year) + "_to_" + str(end_year) + "/"
+main_output_folder = "/scratch-shared/edwinsut/data_for_flore/" + clone_area + "/" + str(sta_year) + "_to_" + str(end_year) + "/"
 # - prepare the directory
 if os.path.exists(main_output_folder) == False: os.makedirs(main_output_folder)
 
 # location of netcdf input files
-pcrglobwb_output_folder = "/scratch-shared/edwin/05min_runs_for_gmd_paper_30_oct_2017/05min_runs_4LCs_accutraveltime_cru-forcing_1958-2015/non-natural_starting_from_1958/begin_from_1958/M02/netcdf/"
+pcrglobwb_output_folder = "/scratch-shared/edwin/05min_runs_for_gmd_paper_30_oct_2017/05min_runs_4LCs_accutraveltime_cru-forcing_1958-2015/non-natural_starting_from_1958/begin_from_1958/" + clone_area + "/"
 # - list of netcdf input files
 pcrglobwb_output_files = [
 'channelStorage_monthAvg_output.nc',
@@ -35,7 +37,12 @@ pcrglobwb_output_files = [
 'totalActiveStorageThickness_monthAvg_output.nc',
 'totalEvaporation_monthTot_output.nc',
 'totalRunoff_monthTot_output.nc',
-'totalWaterStorageThickness_monthAvg_output.nc'
+'totalWaterStorageThickness_monthAvg_output.nc',
+'referencePotET_monthTot_output.nc',
+'waterBodyActEvaporation_monthTot_output.nc',
+'waterBodyPotEvaporation_monthTot_output.nc',
+'totalLandSurfacePotET_monthTot_output.nc',
+'totalPotentialEvaporation_monthTot_output.nc'
 ]
 
 for file_name in pcrglobwb_output_files:
