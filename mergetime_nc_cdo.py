@@ -49,13 +49,17 @@ pcrglobwb_output_files = [
 'totalPotentialEvaporation_monthTot_output.nc'
 ]
 
+
+# initiating cmd line
+cdo_cmd_line = ""
+
 for file_name in pcrglobwb_output_files:
     
     # an example of cdo line: cdo -L -mergetime -selyear,1958/2007 ../../*1958/M02/netcdf/precipitation_monthTot_output.nc -selyear,2008/2015 ../../*2008/M02/netcdf/precipitation_monthTot_output.nc precipitation_monthTot_output.nc
     
     
     # cdo main command
-    cdo_cmd_line = 'cdo -L -mergetime' 
+    cdo_cmd_line += 'cdo -L -mergetime' 
     
     # input netcdf file names and selecting years 
     for i_year in range(0, len(sta_year)):
