@@ -7,8 +7,8 @@ import sys
 import pcraster as pcr
 
 # starting and end years
-sta_year = [1958, 2007]
-end_year = [2008, 2015]
+sta_year = ['1958', '2007']
+end_year = ['2008', '2015']
 
 clone_area = "M02"
 
