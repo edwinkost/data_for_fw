@@ -63,7 +63,7 @@ for file_name in pcrglobwb_output_files:
     # make it parallel
     cdo_cmd_line += ' & '
 
-print(cmd)
-os.system(cmd)
+print(cdo_cmd_line)
+os.system(cdo_cmd_line)
 
 
