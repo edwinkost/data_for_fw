@@ -13,12 +13,12 @@ end_year = 2010
 clone_area = "M08"
 
 # main output folder
-main_output_folder = "/scratch-shared/edwinsut/data_for_flore/" + clone_area + "/" + str(sta_year) + "_to_" + str(end_year) + "/"
+main_output_folder = "/scratch-shared/edwinhs/pcrglobwb2_output_gmd_paper_rerun_201902XX/05min/non-natural_1_fat_node/climatology/" + clone_area + "/" + str(sta_year) + "_to_" + str(end_year) + "/"
 # - prepare the directory
 if os.path.exists(main_output_folder) == False: os.makedirs(main_output_folder)
 
 # location of netcdf input files
-pcrglobwb_output_folder = "/scratch-shared/edwin/05min_runs_for_gmd_paper_30_oct_2017/05min_runs_4LCs_accutraveltime_cru-forcing_1958-2015/non-natural_starting_from_1958/begin_from_1958/" + clone_area + "/"
+pcrglobwb_output_folder = "/scratch-shared/edwinhs/pcrglobwb2_output_gmd_paper_rerun_201902XX/05min/non-natural_1_fat_node/merged/" + clone_area + "/"
 # - list of netcdf input files
 pcrglobwb_output_files = [
 'channelStorage_monthAvg_output.nc',
