@@ -55,7 +55,7 @@ for file_name in pcrglobwb_output_files:
     
     # input netcdf file names and selecting years 
     for i_year in range(0, len(sta_year)):
-        cdo_cmd_line += ' -selyear,' + sta_year[i_year] + "/" + end_year[i_year] + " " + pcrglobwb_output_folder + "/*" + sta_year[i_year] + "/" + clone_area + "/" + file_name
+        cdo_cmd_line += ' -selyear,' + sta_year[i_year] + "/" + end_year[i_year] + " " + pcrglobwb_output_folder + "/*" + sta_year[i_year] + "/" + clone_area + "/netcdf/" + file_name
     
     # output netcdf file
     cdo_cmd_line += " " + main_output_folder + "/" + file_name
