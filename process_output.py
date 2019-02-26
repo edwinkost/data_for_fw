@@ -8,7 +8,7 @@ import pcraster as pcr
 
 # period selected
 sta_year = 1990
-end_year = 1999
+end_year = 2010
 
 clone_area = "M02"
 
