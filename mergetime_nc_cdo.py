@@ -7,8 +7,8 @@ import sys
 import pcraster as pcr
 
 # starting and end years
-sta_year = ['1958', '2007']
-end_year = ['2008', '2015']
+sta_year = ['1958', '2008']
+end_year = ['2007', '2015']
 
 clone_area = "M02"
 
@@ -63,6 +63,7 @@ for file_name in pcrglobwb_output_files:
     # make it parallel
     cdo_cmd_line += ' & '
 
+cdo_cmd_line += "wait"
 print(cdo_cmd_line)
 os.system(cdo_cmd_line)
 
