@@ -16,6 +16,9 @@ clone_area = "M02"
 main_output_folder = "/scratch-shared/edwinhs/pcrglobwb2_output_gmd_paper_rerun_201902XX/05min/non-natural_1_fat_node/only_climatology/" + clone_area + "/" + str(sta_year) + "_to_" + str(end_year) + "/"
 # - prepare the directory
 if os.path.exists(main_output_folder) == False: os.makedirs(main_output_folder)
+cmd = "rm -r " + main_output_folder + "/*"
+print(cmd)
+os.system(cmd)
 
 # location of netcdf input files
 pcrglobwb_output_folder = "/scratch-shared/edwinhs/pcrglobwb2_output_gmd_paper_rerun_201902XX/05min/non-natural_1_fat_node/merged/" + clone_area + "/"
