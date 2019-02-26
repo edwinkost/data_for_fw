@@ -10,7 +10,7 @@ import pcraster as pcr
 sta_year = ['1958', '2008']
 end_year = ['2007', '2015']
 
-clone_area = "M08"
+clone_area = "M02"
 
 # main output folder
 main_output_folder = "/scratch-shared/edwinhs/pcrglobwb2_output_gmd_paper_rerun_201902XX/05min/non-natural_1_fat_node/merged/" + clone_area + "/" 
@@ -25,6 +25,7 @@ os.system(cmd)
 pcrglobwb_output_folder = "/scratch-shared/edwinhs/pcrglobwb2_output_gmd_paper_rerun_201902XX/05min/non-natural_1_fat_node/"
 # - list of netcdf input files
 pcrglobwb_output_files = [
+'actualET_monthTot_output.nc',
 'channelStorage_monthAvg_output.nc',
 'discharge_monthAvg_output.nc',
 'dynamicFracWat_monthAvg_output.nc',
