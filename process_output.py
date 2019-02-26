@@ -10,7 +10,7 @@ import pcraster as pcr
 sta_year = 1990
 end_year = 2010
 
-clone_area = "M02"
+clone_area = "M05"
 
 # main output folder
 main_output_folder = "/scratch-shared/edwinhs/pcrglobwb2_output_gmd_paper_rerun_201902XX/05min/non-natural_1_fat_node/only_climatology/" + clone_area + "/" + str(sta_year) + "_to_" + str(end_year) + "/"
