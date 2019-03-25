@@ -49,8 +49,8 @@ for file_name in pcrglobwb_output_files:
     # selecting the lat lon block extent
     # - input netcdf file 
     inp_global_climatology_nc_file = climatology_nc_file
-    # - extent of study area, e.g. sellonlatbox,120,-90,20,-20
-    sellonlatbox_argument = "-sellonlatbox,120,-90,20,-20" 
+    # - extent of study area, e.g. sellonlatbox,23,60,-7,32
+    sellonlatbox_argument = "-sellonlatbox,23,60,-7,32" 
     # - output netcdf file 
     climatology_nc_file = output_directory + "/" + "study_area" + "_" + file_name.split(".")[0] + "_climatology_" + \
                                                    str(sta_year) + "_to_" + str(end_year) + ".nc"
